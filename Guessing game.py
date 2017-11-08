@@ -1,5 +1,4 @@
-#Guessing game by Immanuel, http://github.com/GitImmanuel, 11-05-2017 start
-
+#Guessing game by Immanuel, http://github.com/GitImmanuel, 11-05-2017
 #Importing stuff
 import math
 import sys
@@ -39,16 +38,29 @@ def noob():
     found = False
 
     while not found:
-        userGuess = int(input("Your guess: "))
-        print('')
+
+        def lol():
+            try:
+                global userGuess
+                userGuess = int(input("Your guess: "))
+            except (SyntaxError, ValueError):
+                print('')
+                print('Please enter a number.')
+                lol()
+
+        lol()
+
         if userGuess == randomNumber:
+            print('')
             print('Congratulations! You have found the number.')
             print('')
             found = True
             playmore()
         elif userGuess < randomNumber:
+            print('')
             print('The answer is 2.')
         elif userGuess > randomNumber:
+            print('')
             print('The answer is 1.')
 
 def easy():
@@ -58,16 +70,28 @@ def easy():
     found = False
 
     while not found:
-        userGuess = int(input('Your guess: '))
-        print('')
+        def lol():
+            try:
+                global userGuess
+                userGuess = int(input("Your guess: "))
+            except (SyntaxError, ValueError):
+                print('')
+                print('Please enter a number.')
+                lol()
+
+        lol()
+
         if userGuess == randomNumber:
+            print('')
             print("Congratulations! You have found the number.")
             print('')
             found = True
             playmore()
         elif userGuess < randomNumber:
+            print('')
             print('Guess higher!')
         elif userGuess > randomNumber:
+            print('')
             print('Guess lower!')
 
 def normal():
@@ -77,16 +101,28 @@ def normal():
     found = False
 
     while not found:
-        userGuess = int(input('Your guess: '))
-        print('')
+        def lol():
+            try:
+                global userGuess
+                userGuess = int(input("Your guess: "))
+            except (SyntaxError, ValueError):
+                print('')
+                print('Please enter a number.')
+                lol()
+
+        lol()
+
         if userGuess == randomNumber:
+            print('')
             print("Congratulations! You have found the number.")
             print('')
             found = True
             playmore()
         elif userGuess < randomNumber:
+            print('')
             print('Guess higher!')
         elif userGuess > randomNumber:
+            print('')
             print('Guess lower!')
 
 def hard():
@@ -96,16 +132,27 @@ def hard():
     found = False
 
     while not found:
-        userGuess = int(input('Your guess: '))
-        print('')
+        def lol():
+            try:
+                global userGuess
+                userGuess = int(input("Your guess: "))
+            except (SyntaxError, ValueError):
+                print('')
+                print('Please enter a number.')
+                lol()
+
+        lol()
         if userGuess == randomNumber:
+            print('')
             print("Congratulations! You have found the number.")
             print('')
             found = True
             playmore()
         elif userGuess < randomNumber:
+            print('')
             print('Guess higher!')
         elif userGuess > randomNumber:
+            print('')
             print('Guess lower!')
 
 def insane():
@@ -115,14 +162,25 @@ def insane():
     found = False
 
     while not found:
-        userGuess = int(input('Your guess: '))
-        print('')
+        def lol():
+            try:
+                global userGuess
+                userGuess = int(input("Your guess: "))
+            except (SyntaxError, ValueError):
+                print('')
+                print('Please enter a number.')
+                lol()
+
+        lol()
+
         if userGuess == randomNumber:
+            print('')
             print("Congratulations! You have found the number.")
             print('')
             found = True
             playmore()
         else:
+            print('')
             print('Guess further')
 
 #Asking mode
