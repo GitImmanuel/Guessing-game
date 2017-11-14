@@ -5,9 +5,6 @@ import sys
 import time
 import random
 
-print("Press 'Enter' at any input to exit.")
-time.sleep(1)
-
 #Welcome
 print('Welcome to my guessing game!')
 print('')
@@ -257,5 +254,5 @@ def askmode():
 
 askmode()
 
-input("Press 'Enter' to exit.")
+input("Exit terminal when done.")
 
