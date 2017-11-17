@@ -5,6 +5,16 @@ import sys
 import time
 import random
 
+def neeeee():
+    from datetime import datetime
+    from datetime import time
+
+    current = datetime.now()
+    print('The current date and time is:', current)
+    print('')
+
+neeeee()
+
 #Welcome
 print('Welcome to my guessing game!')
 print('')
